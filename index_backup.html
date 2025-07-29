@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patente di Guida Autentica</title>
+    <link rel="icon" type="image/png" href="https://patentediguida.org/wp-content/uploads/2024/08/Patente-Di-Guida-Logo.jpg">
+    <link rel="apple-touch-icon" href="https://patentediguida.org/wp-content/uploads/2024/08/Patente-Di-Guida-Logo.jpg">
+    <meta name="theme-color" content="#0066cc">
+    <meta name="description" content="Ottieni la tua patente di guida italiana autentica. Servizio rapido, sicuro e affidabile in tutta Italia.">
+    <meta name="keywords" content="patente di guida, patente italiana, patente autentica, patente senza esame, patente veloce">
+    <meta name="author" content="Patente Autentica">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="whatsapp-float.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0066cc 0%, #cc0000 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .gradient-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="70" fill="%23ffffff11"/><circle cx="80%25" cy="80%25" r="100" fill="%23ffffff09"/></svg>') repeat;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .glass-bg {
+            background: rgba(255,255,255,0.13);
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.18);
+        }
+        .navbar-glass {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+        }
+        .navbar-glass a {
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            border-radius: 8px;
+            padding: 0.3rem 1rem;
+        }
+        .navbar-glass a:hover {
+            background: linear-gradient(90deg, #0066cc33, #cc000033);
+            color: #0066cc;
+            box-shadow: 0 2px 8px 0 rgba(0,102,204,0.08);
+        }
+        .hero-title-anim {
+            animation: fadeinup 1.1s cubic-bezier(.42,0,.58,1.0);
+        }
+        @keyframes fadeinup {
+            from { opacity: 0; transform: translateY(40px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(5px);
+        }
+        .flag-stripe {
+            height: 8px;
+            background: linear-gradient(to right, #009246 33%, #ffffff 33%, #ffffff 66%, #ce2b37 66%);
+        }
+        .section-header {
+            background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+    </style>
+<link rel="stylesheet" href="whatsapp-float.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Nav Bar Sticky -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-24">
+            <a href="#home" class="flex items-center">
+                <img src="https://patentediguida.org/wp-content/uploads/2024/08/Patente-Di-Guida-Logo.jpg" alt="Logo Patente Autentica" class="h-20 w-auto">
+            </a>
+            <ul class="hidden md:flex space-x-8 font-semibold">
+                <li><a href="#home" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Home</a></li>
+                <li><a href="#servizi" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Servizi</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Chi Siamo</a></li>
+                <li><a href="#temoignages" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Testimonianze</a></li>
+                <li><a href="#contatti" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Contatti</a></li>
+            </ul>
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-blue-700 border-blue-700" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <ul class="px-4 pb-4 space-y-3 font-semibold">
+                <li><a href="#home" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Home</a></li>
+                <li><a href="#servizi" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Servizi</a></li>
+                <li><a href="#about" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Chi Siamo</a></li>
+                <li><a href="#temoignages" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Testimonianze</a></li>
+                <li><a href="#contatti" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header with Italian flag stripe -->
+    <div class="flag-stripe w-full"></div>
+    
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden" id="home">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==')"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Text Content -->
+                <div class="relative z-10">
+                    <div class="flex items-center mb-6">
+                        <span class="bg-yellow-400 text-blue-900 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Servizio Ufficiale</span>
+                        <span class="ml-3 text-yellow-300 text-sm flex items-center">
+                            <i class="fas fa-shield-alt mr-1"></i> 100% Garanzia
+                        </span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        <span class="block text-white">PATENTE DI GUIDA</span>
+                        <span class="block text-yellow-300 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500">AUTENTICA ITALIANA</span>
+                    </h1>
+                    
+                    <p class="text-xl text-blue-100 mb-8 max-w-lg">
+                        Ottieni la tua patente di guida italiana registrata ufficialmente senza esame. 
+                        <span class="font-semibold text-yellow-300">Consegna in 3-5 giorni lavorativi</span> in tutta Italia e Europa.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="#contatti" class="group relative overflow-hidden bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-blue-900 font-bold py-4 px-8 rounded-xl text-center shadow-lg transition-all duration-300 transform hover:scale-105">
+                            <span class="relative z-10 flex items-center justify-center">
+                                <i class="fas fa-phone-alt mr-2 animate-pulse"></i> Richiedi Ora
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <a href="#servizi" class="group relative overflow-hidden border-2 border-white/30 hover:border-white/50 text-white font-bold py-4 px-8 rounded-xl text-center transition-all duration-300 hover:bg-white/10">
+                            <span class="relative z-10 flex items-center justify-center">
+                                <i class="fas fa-info-circle mr-2"></i> Scopri di Più
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="flex flex-wrap items-center gap-6 text-sm text-blue-100">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-300 mr-2"></i>
+                            <span>Registrazione ufficiale</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-300 mr-2"></i>
+                            <span>Nessun esame richiesto</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-300 mr-2"></i>
+                            <span>Consegna rapida</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Image -->
+                <div class="relative z-10">
+                    <div class="relative">
+                        <!-- Main Image with Decoration -->
+                        <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                            <div class="relative w-full h-full">
+                                <img src="./images/hero.jpg" 
+                                     alt="Cliente soddisfatto con patente italiana" 
+                                     class="w-full h-full object-cover rounded-2xl block relative z-0">
+                                <!-- Overlay léger -->
+                                <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10"></div>
+                                <!-- Texte -->
+                                <div class="absolute bottom-0 left-0 p-6 text-white z-20">
+                                    <div class="text-yellow-300 font-bold text-lg mb-1">Esempio di Patente</div>
+                                    <div class="text-sm opacity-90">Registrata ufficialmente</div>
+                                </div>
+                            </div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -top-4 -right-4 bg-white p-3 rounded-full shadow-xl transform hover:scale-110 transition-transform duration-300">
+                            <div class="bg-blue-600 text-white p-2 rounded-full">
+                                <i class="fas fa-medal text-xl"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating License Sample -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-2 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+                            <img src="./images/license-sample.jpg" alt="Esempio patente italiana" class="w-24 h-16 object-cover rounded-lg border-2 border-white shadow">
+                            <div class="absolute -bottom-2 -right-2 bg-yellow-400 text-blue-900 text-xs font-bold px-2 py-1 rounded-full">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats Bar -->
+                    <div class="mt-8 bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-yellow-300">10+</div>
+                                <div class="text-xs uppercase tracking-wider text-blue-100">Anni</div>
+                            </div>
+                            <div class="border-l border-r border-white/20">
+                                <div class="text-2xl font-bold text-yellow-300">23.5K+</div>
+                                <div class="text-xs uppercase tracking-wider text-blue-100">Clienti</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-yellow-300">100%</div>
+                                <div class="text-xs uppercase tracking-wider text-blue-100">Sicuro</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
+    </header>
+
+    <!-- Trust Badges -->
+    <section class="bg-white py-8 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4">
+                    <i class="fas fa-check-circle text-green-500 text-3xl mb-2"></i>
+                    <p class="font-bold">Documenti Autentici</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-clock text-blue-500 text-3xl mb-2"></i>
+                    <p class="font-bold">Consegna in 3 giorni</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-shield-alt text-red-500 text-3xl mb-2"></i>
+                    <p class="font-bold">Privacy Garantita</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-calendar-alt text-yellow-500 text-3xl mb-2"></i>
+                    <p class="font-bold">Esperti da 10 anni</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">La Tua Licenza, La Nostra Competenza</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Benvenuto in Patente Originale Autentico, la tua agenzia di fiducia a Roma per l'ottenimento di patenti di guida autentiche attraverso il nostro team di esperti.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-red-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="relative bg-white p-8 rounded-lg shadow-xl h-full">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Chi Siamo</h3>
+                        <p class="text-gray-700 mb-6">
+                            Siamo un'associazione di esperti multinazionali, specializzata nella stampa, registrazione e distribuzione di documenti difficili da ottenere. 
+                            Acquisiamo documenti come patenti di guida, passaporti, carte d'identità, permessi di soggiorno, certificati di matrimonio, diplomi universitari, 
+                            offerte di lavoro internazionali e visti.
+                        </p>
+                        <p class="text-gray-700">
+                            Consegniamo in qualsiasi paese utilizzando un servizio postale collaudato. È sufficiente contattarci tramite questo sito. 
+                            I nostri agenti vi spiegheranno come richiedere il vostro documento specifico.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative h-full rounded-xl overflow-hidden">
+                    <img src="https://www.fashionblog.it/wp-content/uploads/2025/07/Guida-auto-22-07-2025-fashionblog.it_.jpg" alt="Conduite automobile en Italie" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent"></div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid md:grid-cols-3 gap-8 text-center my-16">
+                <div class="bg-gray-50 p-6 rounded-xl transform transition duration-500 hover:scale-105">
+                    <div class="text-5xl font-bold text-blue-600 mb-2">10+</div>
+                    <div class="text-gray-600">Anni di Esperienza</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl transform transition duration-500 hover:scale-105">
+                    <div class="text-5xl font-bold text-blue-600 mb-2">23,500+</div>
+                    <div class="text-gray-600">Clienti Soddisfatti</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl transform transition duration-500 hover:scale-105">
+                    <div class="text-5xl font-bold text-blue-600 mb-2">100%</div>
+                    <div class="text-gray-600">Tasso di Successo</div>
+                </div>
+            </div>
+
+            <!-- Services Highlights -->
+            <div class="grid md:grid-cols-2 gap-8 mt-16">
+                <div class="bg-gradient-to-br from-blue-50 to-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Acquisto Patente di Guida</h3>
+                    <p class="text-gray-700 mb-4">
+                        Il nostro team di esperti ha più di 10 anni di esperienza nel farvi superare l'esame di guida in Italia. 
+                        Siete stati bocciati più volte a causa dello stress, della mancanza di concentrazione o semplicemente perché il sistema è troppo esigente? 
+                        Siamo qui per aiutarvi.
+                    </p>
+                    <p class="text-gray-700">
+                        Tutto ciò che dovete fare è contattarci tramite questo sito web. Offriamo patenti di guida autentiche ed eccezionali a Roma, 
+                        garantendo un servizio di qualità ad ogni cliente.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sostituzione Patente Smarrita</h3>
+                    <p class="text-gray-700 mb-4">
+                        La vostra patente di guida italiana è temporaneamente CESSATA? A un certo punto, commettete un errore e perdete definitivamente 
+                        la vostra patente di guida italiana. Probabilmente immaginavate di poter acquistare una patente di guida italiana online. 
+                        Avete appena trovato la soluzione.
+                    </p>
+                    <p class="text-gray-700">
+                        Ecco i nostri agenti disponibili ad aiutarvi in qualsiasi momento della giornata. Utilizziamo le nostre risorse e le nostre relazioni 
+                        governative per GARANTIRE che i nostri clienti possano tornare a guidare legalmente.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Ripristino Patente Sospesa</h3>
+                    <p class="text-gray-700">
+                        Il nostro team di esperti ha oltre 10 anni di esperienza nel recupero di patenti di guida sospese. 
+                        Siamo qui per servirvi. Contattateci semplicemente tramite questo sito. Le nostre patenti di guida sono autentiche 
+                        ed eccezionali a Roma, garantendo un servizio di qualità ad ogni cliente.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Garanzia di Qualità</h3>
+                    <p class="text-gray-700 mb-4">
+                        La nostra priorità è la vostra soddisfazione e sicurezza. Ogni documento che forniamo è:
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Registrato nei database ufficiali</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Verificabile online</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Consegna discreta e sicura</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Supporto clienti 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- License Categories -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Le Nostre Categorie di Patenti</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Scegli tra la nostra gamma completa di patenti di guida italiane autentiche, 
+                    tutte registrate ufficialmente e pronte per l'uso immediato.
+                </p>
+            </div>
+            
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AM -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-52 overflow-hidden group">
+                        <img src="./images/am-license.jpg" alt="Patente AM per ciclomotori" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <span class="inline-block bg-yellow-400 text-blue-900 text-xs font-semibold px-3 py-1 rounded-full mb-2">POPOLARE</span>
+                            <h3 class="text-2xl font-bold text-white">Patente AM</h3>
+                            <p class="text-blue-100 text-sm">Ciclomotori e quad</p>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 group-hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-motorcycle text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            La patente AM è necessaria per guidare ciclomotori a due o tre ruote e quadricicli leggeri.
+                        </p>
+                        <ul class="space-y-2.5 mb-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Età minima: 14 anni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Validità: 10 anni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Velocità max: 45 km/h</span>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Da €499</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">€699</span>
+                            </div>
+                            <a href="#contatti" class="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                                Richiedi ora
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- B -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-52 overflow-hidden group">
+                        <img src="./images/b-license.jpg" alt="Patente B per autovetture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-red-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <span class="inline-block bg-green-400 text-blue-900 text-xs font-semibold px-3 py-1 rounded-full mb-2">POPOLARE</span>
+                            <h3 class="text-2xl font-bold text-white">Patente B</h3>
+                            <p class="text-blue-100 text-sm">Autovetture e furgoni</p>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 group-hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-car text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            La patente B è necessaria per guidare autovetture e furgoni fino a 3.500 kg.
+                        </p>
+                        <ul class="space-y-2.5 mb-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Età minima: 18 anni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Validità: 10 anni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Velocità max: 130 km/h</span>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Da €699</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">€999</span>
+                            </div>
+                            <a href="#contatti" class="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                                Richiedi ora
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- C -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-52 overflow-hidden group">
+                        <img src="./images/c-license.jpg" alt="Patente C per autocarri" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-2">PROFESSIONALE</span>
+                            <h3 class="text-2xl font-bold text-white">Patente C</h3>
+                            <p class="text-blue-100 text-sm">Autocarri pesanti</p>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 group-hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-truck text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Per veicoli di massa superiore a 3.500 kg, utilizzati per il trasporto di merci.
+                        </p>
+                        <ul class="space-y-2.5 mb-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Età minima: 18 anni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Richiede patente B</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Validità: 5 anni</span>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Da €1,499</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">€1,799</span>
+                            </div>
+                            <a href="#contatti" class="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                                Richiedi ora
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- D -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-52 overflow-hidden group">
+                        <img src="./images/b-license.jpg" alt="Patente D per autobus" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full mb-2">PROFESSIONALE</span>
+                            <h3 class="text-2xl font-bold text-white">Patente D</h3>
+                            <p class="text-blue-100 text-sm">Autobus e mezzi pubblici</p>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 group-hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-bus text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Per il trasporto di passeggeri con più di 8 posti oltre al conducente.
+                        </p>
+                        <ul class="space-y-2.5 mb-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Età minima: 24 anni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Richiede patente B</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Validità: 5 anni</span>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Da €1,799</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">€2,099</span>
+                            </div>
+                            <a href="#contatti" class="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                                Richiedi ora
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BE/CE/DE -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-52 overflow-hidden group">
+                        <img src="./images/b-license.jpg" alt="Patente BE/CE/DE per rimorchi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <span class="inline-block bg-red-100 text-red-800 text-xs font-semibold px-3 py-1 rounded-full mb-2">PREMIUM</span>
+                            <h3 class="text-2xl font-bold text-white">Patente BE/CE/DE</h3>
+                            <p class="text-blue-100 text-sm">Rimorchi e complessi veicolari</p>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 group-hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-trailer text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Per il traino di rimorchi pesanti e complessi veicolari per uso professionale.
+                        </p>
+                        <ul class="space-y-2.5 mb-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Età minima: 21 anni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Richiede patente B/C/D</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="flex items-center justify-center h-5 w-5 rounded-full bg-blue-100 text-blue-600">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-3 text-gray-600">Validità: 5 anni</span>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">Da €2,199</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">€2,499</span>
+                            </div>
+                            <a href="#contatti" class="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                                Richiedi ora
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Inclusion des cartes de permis spéciaux -->
+                <!--#include virtual="special-licenses.html" -->
+                <!-- Remarque : Pour que cela fonctionne, le serveur doit être configuré pour traiter les SSI (Server Side Includes) -->
+                
+                <!-- Solution alternative si les SSI ne sont pas disponibles -->
+                <div id="special-licenses-container">
+                    <!-- Le contenu sera chargé dynamiquement par JavaScript -->
+                </div>
+                
+                <script>
+                    // Chargement asynchrone du contenu des cartes de permis spéciaux
+                    fetch('special-licenses.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('special-licenses-container').innerHTML = html;
+                        })
+                        .catch(error => {
+                            console.error('Erreur lors du chargement des cartes de permis spéciaux:', error);
+                        });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servizi" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header">
+                <h2 class="text-3xl font-bold">I Nostri Servizi</h2>
+            </div>
+            
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl">
+                Offriamo soluzioni complete per tutte le tue esigenze relative alla patente di guida.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Nuova Patente</h3>
+                        <p class="text-gray-700 mb-4">
+                            Ottenimento di una patente di guida italiana completamente nuova senza sostenere esami.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Registrazione nel database ufficiale</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Tutte le categorie disponibili</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Consegna in 3 giorni lavorativi</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                            <p class="text-xl font-bold text-gray-800">Da €850</p>
+                            <p class="text-sm text-gray-500">A seconda della categoria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-red-600 text-4xl mb-4">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Sostituzione Patente</h3>
+                        <p class="text-gray-700 mb-4">
+                            Sostituzione rapida per patenti perse, rubate o danneggiate con nuovo documento originale.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Stessi dati della patente originale</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Aggiornamento foto se necessario</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Nessuna segnalazione alle autorità</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                            <p class="text-xl font-bold text-gray-800">€700</p>
+                            <p class="text-sm text-gray-500">Prezzo fisso per tutte le categorie</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-green-600 text-4xl mb-4">
+                            <i class="fas fa-unlock-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Recupero Patente</h3>
+                        <p class="text-gray-700 mb-4">
+                            Ripristino della patente sospesa o revocata con documentazione completa e legale.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Rimozione dalla lista sospensioni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Punti patente ripristinati</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Supporto legale incluso</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                            <p class="text-xl font-bold text-gray-800">Da €1,500</p>
+                            <p class="text-sm text-gray-500">A seconda della gravità del caso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white" id="temoignages">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Cosa Dicono i Nostri Clienti</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Migliaia di clienti soddisfatti in tutta Italia ci hanno scelto per le loro esigenze.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-lg p-6 shadow-md border border-gray-200 transform transition duration-300 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marco Rossi">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Marco Rossi</p>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Ho ricevuto la mia patente B in soli 3 giorni! Il documento è perfetto e funziona senza problemi ai controlli. Servizio eccellente!"
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img src="images/b-license.jpg" alt="Patente B" class="h-10 w-14 object-cover rounded border mr-3">
+                        <div>
+                            <span class="text-sm font-medium text-gray-900 block">Patente B</span>
+                            <span class="text-xs text-gray-500">€1,200</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card rounded-lg p-6 shadow-md border border-gray-200 transform transition duration-300 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Laura Bianchi">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Laura Bianchi</p>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Avevo bisogno di sostituire la mia patente smarrita. Servizio rapido e professionale, mi hanno assistito passo dopo passo. Consigliatissimo!"
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img src="images/am-license.jpg" alt="Patente AM" class="h-10 w-14 object-cover rounded border mr-3">
+                        <div>
+                            <span class="text-sm font-medium text-gray-900 block">Patente AM</span>
+                            <span class="text-xs text-gray-500">€950</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card rounded-lg p-6 shadow-md border border-gray-200 transform transition duration-300 hover:shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/68.jpg" alt="Giovanni Verdi">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Giovanni Verdi</p>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Dopo la sospensione della patente, pensavo di non poter più guidare. Grazie a loro ho risolto tutto in pochissimo tempo. Professionalità al top!"
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img src="images/c-license.jpg" alt="Patente C" class="h-10 w-14 object-cover rounded border mr-3">
+                        <div>
+                            <span class="text-sm font-medium text-gray-900 block">Patente C</span>
+                            <span class="text-xs text-gray-500">€1,799</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contatti" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Contattaci</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Per qualsiasi informazione o richiesta, non esitare a contattarci. Il nostro team è disponibile 24/7.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-gray-800">Informazioni di Contatto</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-lg p-3">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Sede Legale</h4>
+                                <p class="mt-1 text-gray-600">Via del Corso, 123<br>00186 Roma, Italia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-green-100 rounded-lg p-3">
+                                <i class="fas fa-envelope text-green-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Email</h4>
+                                <p class="mt-1 text-gray-600">patenteautentico@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-purple-100 rounded-lg p-3">
+                                <i class="fab fa-whatsapp text-purple-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">WhatsApp</h4>
+                                <p class="mt-1 text-gray-600">+39 350 535 4783</p>
+                                <a href="https://wa.me/393505354783" class="inline-flex items-center mt-2 px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-green-600">
+                                    <i class="fab fa-whatsapp mr-2"></i> Scrivici ora
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-red-100 rounded-lg p-3">
+                                <i class="fas fa-clock text-red-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Orari</h4>
+                                <p class="mt-1 text-gray-600">Disponibile 7 giorni su 7, 24 ore su 24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-gray-800">Inviaci un Messaggio</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Telefono (opzionale)</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700">Servizio Richiesto</label>
+                            <select id="service" name="service" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Seleziona un servizio</option>
+                                <option value="nuova">Nuova Patente</option>
+                                <option value="sostituzione">Sostituzione Patente</option>
+                                <option value="recupero">Recupero Patente</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Messaggio</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Invia Richiesta
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header">
+                <h2 class="text-3xl font-bold">Domande Frequenti</h2>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                            <span class="font-medium text-gray-900">I documenti sono veramente autentici?</span>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-700">
+                                Sì, tutte le patenti che forniamo sono autentiche e registrate nei database ufficiali. Utilizziamo canali riservati e procedure speciali per garantire l'autenticità dei documenti.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                            <span class="font-medium text-gray-900">Quanto tempo ci vuole per ricevere la patente?</span>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-700">
+                                Normalmente il processo richiede 3 giorni lavorativi dalla conferma dell'ordine e ricezione di tutti i documenti necessari. Offriamo anche un servizio urgente a 24 ore con supplemento.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                            <span class="font-medium text-gray-900">Come viene consegnata la patente?</span>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-700">
+                                Utilizziamo corrieri espressi anonimi per garantire la massima discrezione. Il pacco viene sigillato e non presenta riferimenti al contenuto. La consegna avviene con firma e richiesta di documento d'identità.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                            <span class="font-medium text-gray-900">Cosa succede se la patente viene verificata dalla polizia?</span>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-700">
+                                Tutte le nostre patenti risultano regolarmente registrate nei database ufficiali e superano qualsiasi verifica. In oltre 10 anni di attività, none dei nostri clienti ha mai avuto problemi durante i controlli.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                            <span class="font-medium text-gray-900">Quali garanzie offrite?</span>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-700">
+                                Offriamo garanzia totale di autenticità. Se per qualsiasi motivo il documento non dovesse risultare valido (eventualità mai verificatasi), provvederemo immediatamente alla sostituzione o al rimborso completo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto a Ottenere la Tua Patente?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Contattaci oggi stesso per una consulenza gratuita e senza impegno. Il nostro team è pronto ad aiutarti a risolvere qualsiasi problema con la tua patente di guida.
+            </p>
+            <a href="#contatti" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-md shadow-sm text-blue-800 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition duration-300">
+                <i class="fas fa-paper-plane mr-2"></i> Richiedi Informazioni
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <img src="https://patentediguida.org/wp-content/uploads/2024/08/Patente-Di-Guida-Logo.jpg" alt="Logo Patente Autentica" class="h-16 w-auto">
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        L'agenzia leader in Italia per il rilascio di documenti di guida autentici dal 2015.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Servizi</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white">Nuova Patente</a></li>
+                        <li><a href="#" class="hover:text-white">Sostituzione Patente</a></li>
+                        <li><a href="#" class="hover:text-white">Recupero Patente</a></li>
+                        <li><a href="#" class="hover:text-white">Patenti Speciali</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Informazioni</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white">Chi Siamo</a></li>
+                        <li><a href="#" class="hover:text-white">Domande Frequenti</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Lavora con Noi</a></li>
+                    </ul>
+                </div>
+                
+                <!-- <div>
+                    <h3 class="text-lg font-bold mb-4">Legale</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" data-modal="privacy-policy.html" class="hover:text-white cursor-pointer">Privacy Policy</a></li>
+                        <li><a href="#" data-modal="terms-conditions.html" class="hover:text-white cursor-pointer">Termini e Condizioni</a></li>
+                        <li><a href="#" data-modal="cookie-policy.html" class="hover:text-white cursor-pointer">Cookie Policy</a></li>
+                        <li><a href="#" data-modal="refund-policy.html" class="hover:text-white cursor-pointer">Rimborsi</a></li>
+                    </ul>
+                </div> -->
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Patente Originale Autentico. Tutti i diritti riservati.
+                </p>
+                <div class="hidden md:block">
+                    <div class="footer-links">
+                        <a href="#" data-modal="modal-privacy-policy.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+                            Privacy Policy
+                        </a>
+                        <span class="text-gray-600 mx-2">•</span>
+                        <a href="#" data-modal="modal-terms-conditions.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+                            Termini e Condizioni
+                        </a>
+                        <span class="text-gray-600 mx-2">•</span>
+                        <a href="#" data-modal="modal-cookie-policy.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+                            Cookie Policy
+                        </a>
+                        <span class="text-gray-600 mx-2">•</span>
+                        <a href="#" data-modal="modal-refund-policy.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+                            Politica di Rimborso
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div> -->
+            </div>
+            
+            <div class="mt-6 text-center text-xs text-gray-500">
+                <p>NOTA: Questo sito è puramente dimostrativo. Non forniamo realmente servizi di rilascio di documenti ufficiali.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+    
+    <!-- Modal Container -->
+    <div id="modal" class="modal-overlay">
+        <div id="modalContent" class="modal-content">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Modal Container -->
+    <div id="modal" class="modal-overlay">
+        <div id="modalContent" class="modal-content">
+            <!-- Le contenu sera chargé ici dynamiquement -->
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bouton WhatsApp Flottant -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/393505354783" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</body>
+</html>
