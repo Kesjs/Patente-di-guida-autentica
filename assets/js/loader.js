@@ -60,7 +60,7 @@ function hideLoader() {
             if (loaderOverlay.parentNode === document.body) {
                 document.body.removeChild(loaderOverlay);
             }
-        }, 800); // Match this with CSS transition time
+        }, 400); // Match this with CSS transition time
     }, remainingTime);
 }
 
