@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento Sicuro - Patente Autentica</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://patentediguida.org/wp-content/uploads/2024/08/Patente-Di-Guida-Logo.jpg">
+    <link rel="apple-touch-icon" href="https://patentediguida.org/wp-content/uploads/2024/08/Patente-Di-Guida-Logo.jpg">
+    
+    <!-- Meta Tags -->
+    <meta name="theme-color" content="#0066cc">
+    <meta name="description" content="Pagamento sicuro per la tua patente di guida. Accettiamo pagamenti tramite bonifico bancario.">
+    <meta name="keywords" content="pagamento patente, bonifico bancario, pagamento sicuro, patente di guida, pagamento online">
+    <meta name="author" content="Patente Autentica">
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="whatsapp-float.css">
+    
+    <style>
+        .bank-transfer-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .bank-transfer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .copy-btn {
+            transition: all 0.2s ease;
+        }
+        
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .copied-message {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .copied-message.show {
+            opacity: 1;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Nav Bar Sticky -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-24">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="https://patentediguida.org/wp-content/uploads/2024/08/Patente-Di-Guida-Logo.jpg" alt="Logo Patente Autentica" class="h-16 w-auto">
+                <span class="text-2xl font-bold text-gray-800">Patente Autentica</span>
+            </a>
+            <ul class="hidden md:flex space-x-8 font-semibold">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Home</a></li>
+                <li><a href="index.html#servizi" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Servizi</a></li>
+                <li><a href="index.html#about" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Chi Siamo</a></li>
+                <li><a href="index.html#temoignages" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Testimonianze</a></li>
+                <li><a href="paiement.html" class="text-blue-700 font-bold transition uppercase text-sm tracking-wider">Pagamento</a></li>
+                <li><a href="index.html#contatti" class="text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider">Contatti</a></li>
+            </ul>
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-blue-700 border-blue-700" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="px-4 pb-4 space-y-3 font-semibold">
+                <li><a href="index.html" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Home</a></li>
+                <li><a href="index.html#servizi" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Servizi</a></li>
+                <li><a href="index.html#about" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Chi Siamo</a></li>
+                <li><a href="index.html#temoignages" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Testimonianze</a></li>
+                <li><a href="paiement.html" class="block text-blue-700 font-bold transition uppercase text-sm tracking-wider py-2">Pagamento</a></li>
+                <li><a href="index.html#contatti" class="block text-gray-700 hover:text-blue-700 transition uppercase text-sm tracking-wider py-2">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 md:py-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==')"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 animate__animated animate__fadeInDown">Pagamento Sicuro</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 animate__animated animate__fadeInUp animate__delay-1s">Completa il tuo acquisto in modo sicuro e protetto</p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
+    </section>
+
+    <!-- Payment Steps -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Come Effettuare il Pagamento</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Segui questi semplici passaggi per completare il tuo acquisto in modo sicuro</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Step 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clipboard-list text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Scegli il Servizio</h3>
+                    <p class="text-gray-600">Seleziona il tipo di patente o servizio desiderato dalla nostra gamma di offerte.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-euro-sign text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Effettua il Pagamento</h3>
+                    <p class="text-gray-600">Segui le istruzioni per il pagamento tramite bonifico bancario sicuro.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Ricevi Conferma</h3>
+                    <p class="text-gray-600">Riceverai una conferma via email e potrai scaricare i tuoi documenti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bank Transfer Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <div class="p-8 sm:p-10">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-2">Pagamento con Bonifico Bancario</h2>
+                        <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                        <p class="text-gray-600">Per completare il tuo acquisto, effettua un bonifico alle seguenti coordinate bancarie:</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bank-transfer-card p-6 rounded-lg border border-gray-200">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-university text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900">Coordinate Bancarie</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">Intestatario</p>
+                                    <div class="flex items-center justify-between bg-gray-50 p-3 rounded-md">
+                                        <span class="font-mono text-gray-800" id="account-holder">AUTOSCUOLA GUIDA SICURA SRL</span>
+                                        <button class="copy-btn text-blue-600 hover:text-blue-800 ml-2" data-clipboard-target="#account-holder">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-xs text-green-600 mt-1 copied-message">Copiato!</p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">IBAN</p>
+                                    <div class="flex items-center justify-between bg-gray-50 p-3 rounded-md">
+                                        <span class="font-mono text-gray-800" id="iban">IT60X0306909606100000123456</span>
+                                        <button class="copy-btn text-blue-600 hover:text-blue-800 ml-2" data-clipboard-target="#iban">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-xs text-green-600 mt-1 copied-message">Copiato!</p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">BIC/SWIFT</p>
+                                    <div class="flex items-center justify-between bg-gray-50 p-3 rounded-md">
+                                        <span class="font-mono text-gray-800" id="bic">BCITITMM</span>
+                                        <button class="copy-btn text-blue-600 hover:text-blue-800 ml-2" data-clipboard-target="#bic">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-xs text-green-600 mt-1 copied-message">Copiato!</p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">Nome Banca</p>
+                                    <div class="flex items-center justify-between bg-gray-50 p-3 rounded-md">
+                                        <span class="font-mono text-gray-800" id="bank-name">INTESA SANPAOLO S.P.A.</span>
+                                        <button class="copy-btn text-blue-600 hover:text-blue-800 ml-2" data-clipboard-target="#bank-name">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-xs text-green-600 mt-1 copied-message">Copiato!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="bg-blue-50 p-6 rounded-lg h-full flex flex-col">
+                                <div class="mb-6">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Importante</h3>
+                                    <ul class="space-y-3 text-gray-700">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                                            <span>Inserisci il tuo nome e cognome nella causale del bonifico</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-shield-alt text-blue-500 mt-1 mr-2"></i>
+                                            <span>Le tue informazioni di pagamento sono protette da crittografia avanzata</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-clock text-blue-500 mt-1 mr-2"></i>
+                                            <span>Il pagamento verrà elaborato entro 1-2 giorni lavorativi</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-envelope text-blue-500 mt-1 mr-2"></i>
+                                            <span>Riceverai una conferma via email</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-auto pt-4 border-t border-blue-100">
+                                    <div class="bg-white p-4 rounded-lg border border-blue-200">
+                                        <div class="flex items-start">
+                                            <div class="flex-shrink-0 text-yellow-500">
+                                                <i class="fas fa-exclamation-triangle text-xl"></i>
+                                            </div>
+                                            <div class="ml-3">
+                                                <h4 class="text-sm font-medium text-yellow-800">Attenzione</h4>
+                                                <p class="text-xs text-yellow-700">Verifica sempre l'IBAN e i dati del beneficiario prima di effettuare il bonifico.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-exclamation-circle text-yellow-400 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm text-yellow-700">
+                                    <span class="font-medium">Nota importante:</span> Dopo aver effettuato il pagamento, invia una copia della ricevuta di pagamento a 
+                                    <a href="mailto:pagamenti@patenteautentica.it" class="font-medium underline">pagamenti@patenteautentica.it</a> 
+                                    per accelerare l'elaborazione del tuo ordine.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Hai bisogno di aiuto?</h3>
+                        <p class="text-gray-600 mb-6">Il nostro team di supporto è qui per aiutarti con qualsiasi domanda sul processo di pagamento.</p>
+                        <a href="mailto:supporto@patenteautentica.it" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            <i class="fas fa-envelope mr-2"></i> Contatta il Supporto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

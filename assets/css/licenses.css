@@ -1,0 +1,167 @@
+/* Styles pour les cartes de permis */
+.license-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.license-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.license-card .card-image {
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+}
+
+.license-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.license-card:hover img {
+    transform: scale(1.05);
+}
+
+.license-card .card-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.license-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+.license-card .card-subtitle {
+    color: #4a5568;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.license-card .card-description {
+    color: #4a5568;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.license-card .card-features {
+    margin-bottom: 1.5rem;
+}
+
+.license-card .card-feature {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.license-card .card-feature-icon {
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+    margin-right: 0.75rem;
+    color: #4299e1;
+}
+
+.license-card .card-feature-text {
+    color: #4a5568;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.license-card .card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #edf2f7;
+}
+
+.license-card .card-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.license-card .card-price-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.license-card .card-price-old {
+    font-size: 0.875rem;
+    color: #a0aec0;
+    text-decoration: line-through;
+    margin-top: 0.25rem;
+}
+
+.license-card .card-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+/* Styles pour les onglets */
+.tab-button {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    background-color: #f7fafc;
+    color: #4a5568;
+}
+
+.tab-button:hover {
+    background-color: #edf2f7;
+    color: #2d3748;
+}
+
+.tab-button.active {
+    background-color: #4299e1;
+    color: white;
+    border-color: #4299e1;
+}
+
+/* Ajustements pour les écrans mobiles */
+@media (max-width: 640px) {
+    .license-card .card-image {
+        height: 180px;
+    }
+    
+    .license-card .card-content {
+        padding: 1.25rem;
+    }
+}
+
+/* Animation pour le chargement des cartes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.license-card {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* Délai d'animation pour chaque carte */
+.license-card:nth-child(1) { animation-delay: 0.1s; }
+.license-card:nth-child(2) { animation-delay: 0.2s; }
+.license-card:nth-child(3) { animation-delay: 0.3s; }
+.license-card:nth-child(4) { animation-delay: 0.4s; }
+.license-card:nth-child(5) { animation-delay: 0.5s; }
+.license-card:nth-child(6) { animation-delay: 0.6s; }
